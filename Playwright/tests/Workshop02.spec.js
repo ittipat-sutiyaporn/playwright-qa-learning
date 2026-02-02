@@ -31,3 +31,17 @@ test ('test radio button interactions', async ({page}) => {
     await page.locator('input[type="radio"][value="female"]').check();
     await expect(page.locator('input[type="radio"][value="female"]')).toBeChecked();
 })
+
+
+// test ('test dropdown list ', async ({page}) => {
+//     await page.goto('https://web-demo.qahive.com/form-demo');
+//     // แบบแรก
+//     // await page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select').selectOption('TH');
+//     // await expect(page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select')).toHaveValue('TH');
+//     // แบบที่สอง  
+//     // await page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select').selectOption({ label: 'Philippines' });
+//     // await expect(page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select')).toHaveValue('PH');
+//     // แบบที่สาม  
+//     // await page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select').selectOption({ index: 3 });
+//     // await expect(page.locator('//*[@id="root"]/main/div/div/form[1]/div[5]/select')).toHaveValue('HK');
+// })
